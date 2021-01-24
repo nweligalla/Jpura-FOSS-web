@@ -14,10 +14,9 @@ M.ScrollSpy.init(scrollSpy, {});
 const slider = document.querySelectorAll('.slider');
 M.Slider.init(slider, {
     indicators: false,
-    height: 500,
+    height: 450,
     transition: 500,
-    interval: 3000
-
+    interval: 4000
 });
 
 //materilized box
@@ -29,3 +28,12 @@ M.Materialbox.init(matbox, {});
 
 const tooltip = document.querySelectorAll('.tooltipped');
 M.Tooltip.init(tooltip, {});
+
+
+// form modal
+
+const modalForm = document.querySelector('.modal');
+M.Modal.init(modalForm, {});
+
+const modalClose = document.querySelector('.close');
+M.Collapsible.init(modalClose);

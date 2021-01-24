@@ -8,7 +8,6 @@
     <link rel="icon" type="image/png" href="img/logo.png">
     <title>USJFOSS</title>
 
-
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
@@ -21,6 +20,9 @@
 </head>
 
 <body id="home" class="scrollspy">
+
+
+
 
     <!-- navbar -->
     <div class="navbar-fixed ">
@@ -37,6 +39,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#events">Events</a></li>
                     <li><a href="#about">About us</a></li>
+                    <li><a href="#reach">Reach us</a></li>
                 </ul>
             </div>
     </div>
@@ -51,73 +54,144 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#events">Events</a></li>
         <li><a href="#about">About us</a></li>
+        <li><a href="#reach">Reach us</a></li>
     </ul>
 
 
     <!-- slider -->
-
     <section class="slider">
-        <ul class="slides hide-on-small-only">
+        <ul class="slides ">
             <li>
-                <img src="img/select().jpg" alt="">
-                <div class="caption right-align">
-                    <h2>Select()</h2>
-                    <h5 class="hide-on-small-only">
-                        An introduction to Angular, React and Vue for frontend development
+                <img src="img/world.jpeg" alt="">
+                <div class="caption left-align">
+                    <h2>Welcome to</h2>
+                    <h2>USJ FOSS</h2>
+                    <h5 class="">
+                        Free and open-source software community in USJ
                     </h5>
                 </div>
             </li>
 
             <li>
                 <img src="img/select().jpg" alt="">
-                <div class="caption left-align">
+                <div class="caption center-align">
                     <h2>Select()</h2>
-                    <h5 class="hide-on-small-only">
+                    <h5 class="">
                         An introduction to Angular, React and Vue for frontend development
                     </h5>
+                </div>
+            </li>
+
+            <li>
+                <img src="img/git.jpg" alt="">
+                <div class="caption right-align">
+                    <h2>Git Init</h2>
+                    <h5 class="">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati odio libero voluptates!
+                    </h5>
+                    <br>
+                    <a class="btn-large orange waves-effect modal-trigger" href="#modal">Register</a>
                 </div>
             </li>
         </ul>
     </section>
 
+    <!-- events -->
+    <section id="events" class="section scrollspy ">
+        <h2 class="blue-text center">Upcoming <span class="black-text">Event</span></h2>
+        <div class="row">
+            <div class="col s12 m6 l4 offset-l2">
+                <img src="img/select().jpg" alt="" class="materialboxed responsive-img image">
+            </div>
 
-    <section id="events" class="section scrollspy purple lighten-3">
-        <div class="container">
-            <h2 class="blue-text center">Upcomming <span class="black-text">Event</span></h2>
-            <div class="row">
-                <div class="col s12 m6 l6">
-                    <img src="img/select().jpg" alt="" class="materialboxed responsive-img">
+            <div class="col s12 m6 l4 offset-l1">
+                <h2 class="blue-text">Git <span class="black-text">init</span></h2>
+                <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nulla.</p>
+                <div class="info">
+                    <a class="btn-floating btn-small red z-depth-0"><i class="material-icons">where_to_vote</i></a>
+                    <p class="info-text">7<sup>th</sup> Feb 2021 @ 6.00P.M.</p>
                 </div>
-
-                <div class="col s12 m6 l6">
-                    <h2 class="blue-text">Git <span class="white-text">init</span></h2>
-                    <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nulla.</p>
-                    <div class="info">
-                        <a class="btn-floating btn-small red z-depth-0"><i class="material-icons">where_to_vote</i></a>
-                        <p class="info-text">7<sup>th</sup> Feb 2021 @ 6.00P.M</p>
-                    </div>
-                    <div class="info">
-                        <a class="btn-floating btn-small red z-depth-0"><i class="material-icons">textsms</i></a>
-                        <p class="info-text">via zoom</p>
-                    </div>
-                    <a class="btn-large orange waves-effect ">Register</a>
+                <div class="info">
+                    <a class="btn-floating btn-small red z-depth-0"><i class="material-icons">textsms</i></a>
+                    <p class="info-text">via zoom</p>
                 </div>
+                <a class="btn-large orange waves-effect modal-trigger" href="#modal">Register</a>
             </div>
         </div>
+
     </section>
 
 
+    <!-- form modal -->
+    <div class="modal " id="modal">
+        <a class="btn-floating right yellow z-depth-0 close"><i class="material-icons red-text">clear</i></a>
+        <div class="container">
+            <div class="form">
+                <h2>git init</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maxime neque reprehenderit deserunt,
+                    explicabo,
+                    consectetur qui nam quod itaque soluta odit hic consequuntur blanditiis nulla doloremque iure! Iste,
+                    quasi.Quibusdam!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam quam voluptate soluta
+                    iusto
+                    architecto id magnam corrupti inventore atque suscipit, recusandae adipisci ipsa explicabo, sunt
+                    asperiores ipsam dolorum vero!
+                </p>
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScPDey7nwrpmErBLFMSY1haWtRB9MUyEaw9pSu16A88GdhzdA/formResponse">
+
+                    <div class="input-field">
+                        <input required type="text" name="entry.1678933582" id="fname">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input required type="text" name="entry.752707843" id="lname">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input required type="email" name="entry.1914947186" id="email">
+                        <label for="email">E-mail</label>
+                    </div>
+
+                    <p>What is your experience in git and github?</p>
+                    <p>
+                        <label>
+                            <input type="radio" name="entry.856737868" value="beginner" required>
+                            <span>Beginner</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="entry.856737868" value="Intermediate">
+                            <span>Intermediate</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="entry.856737868" value="Expert">
+                            <span>Expert</span>
+                        </label>
+                    </p>
+
+                    <input type="submit" class="btn purple waves-effect submitBtn" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- content -->
     <section class="section scrollspy" id="about">
         <div class="container">
 
             <div class="row">
-                <div class="col s12 m6 l4 offset-l1">
-                    <img src="img/logo.png" class="responsive-img">
+                <div class="col s12 m12 l4 offset-l1">
+                    <img src="img/logo.png" class="responsive-img image hide-on-med-and-down">
                 </div>
 
-                <div class="col s12 m6 l4 offset-l2">
+                <div class="col s12 m12 l4 offset-l2">
                     <h2 class="blue-text">J'PURA <span class="black-text">FOSS Community</span></h2>
                     <p>
                         FOSS community is a world wide community which is aeoumd the world.It was launched in Sri Lanka
@@ -130,8 +204,8 @@
 
             <div class="row">
 
-                <div class="col s12 m6 l4 offset-l1">
-                    <h2 class="blue-text ">Univerity of <br> <span class="black-text">Sri Jayewardenepura</span></h2>
+                <div class="col s12 m12 l4 offset-l1">
+                    <h2 class="blue-text ">University of <br> <span class="black-text">Sri Jayewardenepura</span></h2>
                     <p>
                         University Of Sri Jayewardenepura started the education firstly in Buddhist education around
                         16th of February 1959 by Soratha Maha Thero. Later th University commenced it's academic
@@ -141,8 +215,8 @@
                     </p>
                 </div>
 
-                <div class="col s12 m6 l4 offset-l2">
-                    <img src="img/usj-logo.png" class="responsive-img">
+                <div class="col s12 m12 l4 offset-l2">
+                    <img src="img/usj-logo.png" class="responsive-img image hide-on-med-and-down">
                 </div>
             </div>
 
@@ -154,7 +228,7 @@
 
 
     <!-- footer -->
-    <footer class="page-footer purple darken-2">
+    <footer class="page-footer purple darken-2 scrollspy" id="reach">
         <div class="container">
             <div class="row">
                 <div class="col s12 l4 offset-l1">
@@ -184,6 +258,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="scripts/materilize.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
