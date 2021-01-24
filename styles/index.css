@@ -1,0 +1,67 @@
+.mobile-logo {
+  width: 200px;
+  margin: 15%;
+}
+
+.desktop-logo {
+  width: auto;
+  height: 60px;
+  margin-top: 3px;
+  padding: 10px;
+}
+
+/* .brand{
+  width: 500px;
+} */
+
+.social {
+  margin-left: 40px;
+}
+
+#fb {
+  color: white;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+#fb:hover {
+  color: #1877f2;
+  opacity: 1;
+}
+
+#linkedin {
+  color: white;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+#linkedin:hover {
+  color: #2867b2;
+  opacity: 1;
+}
+
+#twitter {
+  color: white;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+#twitter:hover {
+  color: #1da1f2;
+  opacity: 1;
+}
+
+.follow {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.info-text{
+  display: inline;
+  margin-left: 10px;
+  font-size: 1.1em;
+}
+
+.info{
+  margin: 20px 0;
+}
