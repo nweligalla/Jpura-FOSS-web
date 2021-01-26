@@ -10,6 +10,9 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font awesome icons -->
@@ -22,7 +25,7 @@
 <body id="home" class="scrollspy">
 
     <div id="loader"></div>
-    <div id="myDiv" class="animate-bottom">
+    <div id="loading-content" class="animate-bottom">
 
         <!-- navbar -->
         <div class="navbar-fixed ">
@@ -45,27 +48,6 @@
         </nav>
     </div>
 
-    <!-- mobile nav -->
-    <ul class="sidenav" id="mobile-nav">
-        <div class="outer-container">
-            <div class="background">
-                <img src="img/logo.png" class="mobile-logo sidenav-close">
-            </div>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#reach">Reach us</a></li>
-            <div class="inner-container">
-                <h6>Connect with us</h6>
-                <a href="https://www.facebook.com/jpurafoss/" target="_blank"><i
-                        class="fab fa-facebook fa-2x grey-text"></i></a>
-                <a href="https://www.linkedin.com/company/foss-usj" target="_blank"><i
-                        class="fab social fa-linkedin fa-2x grey-text"></i></a>
-                <a href="https://www.twitter.com/usjfoss" target="_blank"><i
-                        class="fab social fa-twitter fa-2x grey-text"></i></a>
-            </div>
-        </div>
-    </ul>
 
 
     <!-- slider -->
@@ -95,7 +77,7 @@
             <li>
                 <img src="img/form-header.png" alt="">
                 <div class="caption right-align black-text">
-                    <h2 class="hide-on-med-and-up">Git Init</h2>
+                    <h2 class="hide-on-med-and-up git_init">Git Init</h2>
                     <h5 class="hide-on-med-and-up">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati odio libero voluptates!
                     </h5>
@@ -106,8 +88,8 @@
         </ul>
     </section>
 
-    <!-- events -->
-    <section id="events" class="section scrollspy ">
+    <!--current event -->
+    <section class="section custom-container">
         <h2 class="blue-text center">Upcoming <span class="black-text">Event</span></h2>
         <div class="row">
             <div class="col s12 m12 l4 offset-l2">
@@ -117,7 +99,7 @@
             </div>
 
             <div class="col s12 m12 l4 offset-l1">
-                <h2 class="blue-text">Git <span class="black-text">init</span></h2>
+                <h2 class="grey-text git_init">Git <span class="black-text">init</span></h2>
                 <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nulla.</p>
                 <div class="info">
                     <a class="btn-floating btn-small red z-depth-0"><i class="material-icons">where_to_vote</i></a>
@@ -127,10 +109,170 @@
                     <a class="btn-floating btn-small red z-depth-0"><i class="material-icons">textsms</i></a>
                     <p class="info-text">via zoom</p>
                 </div>
-                <a class="btn-large pink waves-effect pulse modal-trigger" href="#modal">Register</a>
+                <a class="btn-large pink waves-effect pulse modal-trigger z-depth-3" href="#modal">Register</a>
             </div>
         </div>
     </section>
+
+
+    <!-- events -->
+    <section class="section scrollspy" id="events">
+        <div class="container">
+            <h3 class="center "><span class="blue-text">Events</span> we brought</h3>
+            <div class="row">
+
+                <div class="col s12 m6 l6">
+                    <div class="card small waves-effect sticky-action z-depth-2">
+                        <div class="card-image">
+                            <img class="activator" src="img/git_init.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">
+                                Git init
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title activator grey-text text-darken-4">
+                                Git init
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vel similique vero
+                                doloremque perspiciatis unde nihil ullam accusamus quisquam omnis!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col s12 m6 l6">
+                    <div class="card small waves-effect sticky-action z-depth-2">
+                        <div class="card-image">
+                            <img class="activator" src="img/select().jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">
+                                Select()
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title activator grey-text text-darken-4">
+                                Git init
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vel similique vero
+                                doloremque perspiciatis unde nihil ullam accusamus quisquam omnis!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+    <!-- about us -->
+
+    <section class="section scrollspy" id="about">
+        <div class="container">
+            <h2 class="center"><span class="blue-text">About</span> Us</h2>
+            <div class="row">
+                <div class="col s12 m12 l4 offset-l1">
+                    <img src="img/logo.png" class="responsive-img image hide-on-med-and-down">
+                </div>
+
+                <div class="col s12 m12 l4 offset-l2">
+                    <h2 class="blue-text">J'PURA <span class="black-text">FOSS Community</span></h2>
+                    <p>
+                        FOSS community is a world wide community which is aeoumd the world.It was launched in Sri Lanka
+                        as foss.lk since around 2007. The main task is mainly pramoting the open source software concept
+                        via the society and the University and also to motivate the developers and make a better
+                        background to develop such FOSS softwares.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col s12 m12 l4 offset-l1">
+                    <h2 class="blue-text ">University of <br> <span class="black-text">Sri Jayewardenepura</span></h2>
+                    <p>
+                        University Of Sri Jayewardenepura started the education firstly in Buddhist education around
+                        16th of February 1959 by Soratha Maha Thero. Later th University commenced it's academic
+                        activities with five faculties."Vijja Uppa thathathn settha" takes as the motto of the
+                        University. At the present University has given the education around thousands of students for
+                        the best carrier of them.
+                    </p>
+                </div>
+
+                <div class="col s12 m12 l4 offset-l2">
+                    <img src="img/usj-logo.png" class="responsive-img image hide-on-med-and-down">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer purple darken-2 scrollspy" id="reach">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4 offset-l1">
+                    <p>
+                        J'pura FOSS community is a team of volunteers who helps to raise awareness about FOSS among
+                        curious tech enthusiasts. Giving from basic to advanced knowledge of Free and open source
+                        software in a variety of ways is the main objective of the community.
+                    </p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h2 class="blue-text follow">Follow <span class="white-text">us on</span></h2>
+                    <a href="https://www.facebook.com/jpurafoss/" target="_blank"><i
+                            class="tooltipped fab fa-facebook fa-3x" id="fb" data-tooltip="Facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/foss-usj" target="_blank"><i
+                            class="tooltipped fab social fa-linkedin fa-3x" id="linkedin"
+                            data-tooltip="LinkedIn"></i></a>
+                    <a href="https://www.twitter.com/usjfoss" target="_blank"><i
+                            class="tooltipped fab social fa-twitter fa-3x" id="twitter" data-tooltip="Twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright purple darken-4">
+            <div class="container center-align">
+                &copy; 2021 <a href="#">USJFOSS,</a> All Rights reserved
+            </div>
+        </div>
+
+    </footer>
+    </div>
+
+
+    <!-- ==================================================== misc ================================================= -->
+
+    <!-- mobile nav -->
+    <ul class="sidenav" id="mobile-nav">
+        <div class="outer-container">
+            <div class="background">
+                <img src="img/logo.png" class="mobile-logo sidenav-close">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#reach">Reach us</a></li>
+            <div class="inner-container">
+                <h6>Connect with us</h6>
+                <a href="https://www.facebook.com/jpurafoss/" target="_blank"><i
+                        class="fab fa-facebook fa-2x grey-text"></i></a>
+                <a href="https://www.linkedin.com/company/foss-usj" target="_blank"><i
+                        class="fab social fa-linkedin fa-2x grey-text"></i></a>
+                <a href="https://www.twitter.com/usjfoss" target="_blank"><i
+                        class="fab social fa-twitter fa-2x grey-text"></i></a>
+            </div>
+        </div>
+    </ul>
 
 
     <!-- form modal -->
@@ -186,89 +328,15 @@
                         </label>
                     </p>
 
-                    <input type="submit" class="btn pink waves-effect submitBtn" value="submit">
+                    <button type="submit" class="btn-large pink waves-effect submitBtn white-text z-depth-3">
+                        Submit
+                        <i class="material-icons right">send</i>
+                    </button>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- content -->
-    <section class="section scrollspy" id="about">
-        <div class="container">
-
-            <div class="row">
-                <div class="col s12 m12 l4 offset-l1">
-                    <img src="img/logo.png" class="responsive-img image hide-on-med-and-down">
-                </div>
-
-                <div class="col s12 m12 l4 offset-l2">
-                    <h2 class="blue-text">J'PURA <span class="black-text">FOSS Community</span></h2>
-                    <p>
-                        FOSS community is a world wide community which is aeoumd the world.It was launched in Sri Lanka
-                        as foss.lk since around 2007. The main task is mainly pramoting the open source software concept
-                        via the society and the University and also to motivate the developers and make a better
-                        background to develop such FOSS softwares.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col s12 m12 l4 offset-l1">
-                    <h2 class="blue-text ">University of <br> <span class="black-text">Sri Jayewardenepura</span></h2>
-                    <p>
-                        University Of Sri Jayewardenepura started the education firstly in Buddhist education around
-                        16th of February 1959 by Soratha Maha Thero. Later th University commenced it's academic
-                        activities with five faculties."Vijja Uppa thathathn settha" takes as the motto of the
-                        University. At the present University has given the education around thousands of students for
-                        the best carrier of them.
-                    </p>
-                </div>
-
-                <div class="col s12 m12 l4 offset-l2">
-                    <img src="img/usj-logo.png" class="responsive-img image hide-on-med-and-down">
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-
-    <!-- footer -->
-    <footer class="page-footer purple darken-2 scrollspy" id="reach">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l4 offset-l1">
-                    <p>
-                        J'pura FOSS community is a team of volunteers who helps to raise awareness about FOSS among
-                        curious tech enthusiasts. Giving from basic to advanced knowledge of Free and open source
-                        software in a variety of ways is the main objective of the community.
-                    </p>
-                </div>
-                <div class="col s12 l4 offset-l2">
-                    <h2 class="blue-text follow">Follow <span class="white-text">us on</span></h2>
-                    <a href="https://www.facebook.com/jpurafoss/" target="_blank"><i
-                            class="tooltipped fab fa-facebook fa-3x" id="fb" data-tooltip="Facebook"></i></a>
-                    <a href="https://www.linkedin.com/company/foss-usj" target="_blank"><i
-                            class="tooltipped fab social fa-linkedin fa-3x" id="linkedin"
-                            data-tooltip="LinkedIn"></i></a>
-                    <a href="https://www.twitter.com/usjfoss" target="_blank"><i
-                            class="tooltipped fab social fa-twitter fa-3x" id="twitter" data-tooltip="Twitter"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-copyright purple darken-4">
-            <div class="container center-align">
-                &copy; 2021 <a href="#">USJFOSS,</a> All Rights reserved
-            </div>
-        </div>
-
-    </footer>
-    </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
