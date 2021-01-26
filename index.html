@@ -21,40 +21,50 @@
 
 <body id="home" class="scrollspy">
 
+    <div id="loader"></div>
+    <div id="myDiv" class="animate-bottom">
 
-
-
-    <!-- navbar -->
-    <div class="navbar-fixed ">
-        <nav class="purple"">
+        <!-- navbar -->
+        <div class="navbar-fixed ">
+            <nav class="blue darken-4 accent-4"">
             <div class=" nav-wrapper">
-            <div class="container ">
-                <a href="#" class="brand-log"><img src="img/logo.png" class="desktop-logo sidenav-close"></a>
-                <a href="" class="sidenav-trigger right" data-target="mobile-nav">
-                    <i class="material-icons">menu</i>
-                </a>
+                <div class="container ">
+                    <a href="#" class="brand-log"><img src="img/logo.png" class="desktop-logo sidenav-close"></a>
+                    <a href="" class="sidenav-trigger right" data-target="mobile-nav">
+                        <i class="material-icons">menu</i>
+                    </a>
 
-
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#reach">Reach us</a></li>
-                </ul>
-            </div>
-    </div>
-    </nav>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#reach">Reach us</a></li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
     </div>
 
     <!-- mobile nav -->
     <ul class="sidenav" id="mobile-nav">
-        <div class="background">
-            <img src="img/logo.png" class="mobile-logo sidenav-close">
+        <div class="outer-container">
+            <div class="background">
+                <img src="img/logo.png" class="mobile-logo sidenav-close">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#reach">Reach us</a></li>
+            <div class="inner-container">
+                <h6>Connect with us</h6>
+                <a href="https://www.facebook.com/jpurafoss/" target="_blank"><i
+                        class="fab fa-facebook fa-2x grey-text"></i></a>
+                <a href="https://www.linkedin.com/company/foss-usj" target="_blank"><i
+                        class="fab social fa-linkedin fa-2x grey-text"></i></a>
+                <a href="https://www.twitter.com/usjfoss" target="_blank"><i
+                        class="fab social fa-twitter fa-2x grey-text"></i></a>
+            </div>
         </div>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#reach">Reach us</a></li>
     </ul>
 
 
@@ -83,14 +93,14 @@
             </li>
 
             <li>
-                <img src="img/git.jpg" alt="">
-                <div class="caption right-align">
-                    <h2>Git Init</h2>
-                    <h5 class="">
+                <img src="img/form-header.png" alt="">
+                <div class="caption right-align black-text">
+                    <h2 class="hide-on-med-and-up">Git Init</h2>
+                    <h5 class="hide-on-med-and-up">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati odio libero voluptates!
                     </h5>
                     <br>
-                    <a class="btn-large orange waves-effect modal-trigger" href="#modal">Register</a>
+                    <a class="btn-large white pink-text  waves-effect " href="#events">Learn more</a>
                 </div>
             </li>
         </ul>
@@ -100,11 +110,13 @@
     <section id="events" class="section scrollspy ">
         <h2 class="blue-text center">Upcoming <span class="black-text">Event</span></h2>
         <div class="row">
-            <div class="col s12 m6 l4 offset-l2">
-                <img src="img/select().jpg" alt="" class="materialboxed responsive-img image">
+            <div class="col s12 m12 l4 offset-l2">
+                <div class="image">
+                    <img src="img/git_init.png" alt="" class="materialboxed responsive-img">
+                </div>
             </div>
 
-            <div class="col s12 m6 l4 offset-l1">
+            <div class="col s12 m12 l4 offset-l1">
                 <h2 class="blue-text">Git <span class="black-text">init</span></h2>
                 <p class="flow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nulla.</p>
                 <div class="info">
@@ -115,33 +127,31 @@
                     <a class="btn-floating btn-small red z-depth-0"><i class="material-icons">textsms</i></a>
                     <p class="info-text">via zoom</p>
                 </div>
-                <a class="btn-large orange waves-effect modal-trigger" href="#modal">Register</a>
+                <a class="btn-large pink waves-effect pulse modal-trigger" href="#modal">Register</a>
             </div>
         </div>
-
     </section>
 
 
     <!-- form modal -->
     <div class="modal " id="modal">
-        <a class="btn-floating right yellow z-depth-0 close"><i class="material-icons red-text">clear</i></a>
-        <div class="container">
+        <!-- <a class="btn-floating right yellow z-depth-0 modal-close"><i class="material-icons red-text">clear</i></a> -->
+        <div class="">
             <div class="form">
-                <h2>git init</h2>
+                <img src="img/form-header.png" alt="" class="responsive-img">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maxime neque reprehenderit deserunt,
                     explicabo,
                     consectetur qui nam quod itaque soluta odit hic consequuntur blanditiis nulla doloremque iure! Iste,
                     quasi.Quibusdam!
-                </p>
-                <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam quam voluptate soluta
                     iusto
                     architecto id magnam corrupti inventore atque suscipit, recusandae adipisci ipsa explicabo, sunt
                     asperiores ipsam dolorum vero!
                 </p>
                 <form
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScPDey7nwrpmErBLFMSY1haWtRB9MUyEaw9pSu16A88GdhzdA/formResponse">
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScPDey7nwrpmErBLFMSY1haWtRB9MUyEaw9pSu16A88GdhzdA/formResponse"
+                    target="_blank">
 
                     <div class="input-field">
                         <input required type="text" name="entry.1678933582" id="fname">
@@ -176,7 +186,7 @@
                         </label>
                     </p>
 
-                    <input type="submit" class="btn purple waves-effect submitBtn" value="submit">
+                    <input type="submit" class="btn pink waves-effect submitBtn" value="submit">
                 </form>
             </div>
         </div>
@@ -240,9 +250,13 @@
                 </div>
                 <div class="col s12 l4 offset-l2">
                     <h2 class="blue-text follow">Follow <span class="white-text">us on</span></h2>
-                    <i class="tooltipped fab fa-facebook fa-3x" id="fb" data-tooltip="Facebook"></i>
-                    <i class="tooltipped fab social fa-linkedin fa-3x" id="linkedin" data-tooltip="LinkedIn"></i>
-                    <i class="tooltipped fab social fa-twitter fa-3x" id="twitter" data-tooltip="Twitter"></i>
+                    <a href="https://www.facebook.com/jpurafoss/" target="_blank"><i
+                            class="tooltipped fab fa-facebook fa-3x" id="fb" data-tooltip="Facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/foss-usj" target="_blank"><i
+                            class="tooltipped fab social fa-linkedin fa-3x" id="linkedin"
+                            data-tooltip="LinkedIn"></i></a>
+                    <a href="https://www.twitter.com/usjfoss" target="_blank"><i
+                            class="tooltipped fab social fa-twitter fa-3x" id="twitter" data-tooltip="Twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -254,6 +268,7 @@
         </div>
 
     </footer>
+    </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
