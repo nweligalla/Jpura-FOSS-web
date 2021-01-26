@@ -10,9 +10,9 @@
   padding: 10px;
 }
 
-/* .brand{
-  width: 500px;
-} */
+p {
+  font-size: 18px;
+}
 
 .social {
   margin-left: 40px;
@@ -56,24 +56,150 @@
   padding-left: 0;
 }
 
-.info-text{
+.info-text {
   display: inline;
   margin-left: 10px;
   font-size: 1.1em;
 }
 
-.info{
+.info {
   margin: 20px 0;
 }
 
-.image{
+.image {
   margin: 4em 0;
 }
 
-.form{
+.form {
   margin: 2em 2em;
 }
 
-.close{
+.close {
   margin: 20px;
+}
+
+#events {
+  margin: 30px;
+}
+
+.modal-close {
+  margin: 20px;
+}
+
+.outer-container {
+  position: relative;
+  height: 100%;
+}
+
+.inner-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+div h6 {
+  margin-bottom: 20px;
+}
+
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: pink !important;
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #ec407a !important;
+  box-shadow: 0 1px 0 0 #ec407a !important;
+}
+
+.input-field input[type="email"]:focus + label {
+  color: pink !important;
+}
+
+.input-field input[type="email"]:focus {
+  border-bottom: 1px solid #ec407a !important;
+  box-shadow: 0 1px 0 0 #ec407a !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+
+/* ----------------------------- */
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 56%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid purple;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatebottom;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -30px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -30px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
 }
