@@ -1,12 +1,8 @@
-var myVar;
-
 const loading = () => {
-    myVar = setTimeout(showPage, 5000);
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("loading-content").style.display = "block";
+    }, 1000);
 }
 
 document.addEventListener('DOMContentLoaded', loading());
-
-function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
-}
