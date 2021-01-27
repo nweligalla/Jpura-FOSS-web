@@ -1,3 +1,7 @@
+.font-text {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+
 .mobile-logo {
   width: 200px;
   margin: 15%;
@@ -28,8 +32,8 @@ p {
   transition: 0.3s;
 }
 
-.social-icons{
-  margin-top: 2em ;
+.social-icons {
+  margin-top: 2em;
 }
 
 #fb:hover {
@@ -90,7 +94,7 @@ p {
   margin: 30px;
 }
 
-hr{
+hr {
   width: 20%;
   color: grey;
 }
@@ -170,18 +174,17 @@ h3 {
     margin-bottom: 20px;
   }
 
-  .social-icons{
-    margin-top: 1.5em ;
+  .social-icons {
+    margin-top: 1.5em;
   }
 
   .custom-container {
     margin: 20px;
     padding: 20px;
   }
-
 }
 
-.footer-text{
+.footer-text {
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -198,7 +201,7 @@ h3 {
   margin: -76px 0 0 -76px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #98042D;
+  border-top: 16px solid #98042d;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
