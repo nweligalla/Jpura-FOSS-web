@@ -16,7 +16,7 @@ M.Slider.init(slider, {
     indicators: false,
     height: 450,
     transition: 500,
-    interval: 4000
+    interval: 6000
 });
 
 //materilized box
