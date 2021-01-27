@@ -165,7 +165,6 @@ h3 {
   color: pink !important;
 }
 
-
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: 30px;
@@ -192,6 +191,10 @@ h3 {
   #about p {
     text-align: justify;
   }
+
+  .page-footer p {
+    text-align: justify;
+  }
 }
 
 .footer-text {
@@ -206,8 +209,8 @@ h3 {
   left: 50%;
   top: 50%;
   z-index: 1;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   margin: -76px 0 0 -76px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -267,4 +270,11 @@ h3 {
 
 #loading-content {
   display: none;
+}
+
+.maroon {
+  background-color: #5f0118 !important;
+}
+.amber{
+  background-color: #BF8422 !important;
 }
