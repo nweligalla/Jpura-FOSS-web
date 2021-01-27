@@ -28,6 +28,10 @@ p {
   transition: 0.3s;
 }
 
+.social-icons{
+  margin-top: 2em ;
+}
+
 #fb:hover {
   color: #1877f2;
   opacity: 1;
@@ -124,6 +128,10 @@ h3 {
 .input-field input[type="text"]:focus + label {
   color: pink !important;
 }
+
+.input-field input[type="tel"]:focus + label {
+  color: pink !important;
+}
 /* label underline focus color */
 .input-field input[type="text"]:focus {
   border-bottom: 1px solid #ec407a !important;
@@ -135,6 +143,11 @@ h3 {
 }
 
 .input-field input[type="email"]:focus {
+  border-bottom: 1px solid #ec407a !important;
+  box-shadow: 0 1px 0 0 #ec407a !important;
+}
+
+.input-field input[type="tel"]:focus {
   border-bottom: 1px solid #ec407a !important;
   box-shadow: 0 1px 0 0 #ec407a !important;
 }
@@ -157,8 +170,21 @@ h3 {
     margin-bottom: 20px;
   }
 
+  .social-icons{
+    margin-top: 1.5em ;
+  }
+
+  .custom-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
 }
 
+.footer-text{
+  margin: 0 !important;
+  padding: 0 !important;
+}
 /* ----------------------------- */
 
 /* Center the loader */
@@ -172,7 +198,7 @@ h3 {
   margin: -76px 0 0 -76px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #98042D;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
