@@ -35,5 +35,5 @@ M.Tooltip.init(tooltip, {});
 const modalForm = document.querySelector('.modal');
 M.Modal.init(modalForm, {});
 
-const modalClose = document.querySelector('.close');
-M.Collapsible.init(modalClose);
+// const modalClose = document.querySelector('.close');
+// M.Collapsible.init(modalClose);
