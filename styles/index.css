@@ -189,6 +189,7 @@ h3 {
   .custom-container {
     margin: 20px;
     padding: 20px;
+    visibility: hidden !important;
   }
 
   #about p {
@@ -280,4 +281,10 @@ h3 {
 }
 .amber {
   background-color: #bf8422 !important;
+}
+
+form h5 {
+  margin-top: 4rem;
+  margin-bottom: 5em;
+  font-weight: bold;
 }

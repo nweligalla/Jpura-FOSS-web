@@ -6,3 +6,6 @@ const loading = () => {
 }
 
 document.addEventListener('DOMContentLoaded', loading());
+
+logo = document.querySelector(".brand-logo");
+logo.addEventListener('click', () => location.reload());
