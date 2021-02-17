@@ -1,3 +1,7 @@
+:root {
+  --color: #002f7e;
+}
+
 .font-text {
   font-family: "Nunito Sans", sans-serif !important;
 }
@@ -146,26 +150,26 @@ h3 {
 
 /* label focus color */
 .input-field input[type="text"]:focus + label {
-  color: pink !important;
+  color: var(--color) !important;
 }
 
 /* label underline focus color */
 .input-field input[type="text"]:focus {
-  border-bottom: 1px solid #ec407a !important;
-  box-shadow: 0 1px 0 0 #ec407a !important;
+  border-bottom: 1px solid var(--color) !important;
+  box-shadow: 0 1px 0 0 var(--color) !important;
 }
 
 .input-field input[type="email"]:focus + label {
-  color: pink !important;
+  color: var(--color) !important;
 }
 
 .input-field input[type="email"]:focus {
-  border-bottom: 1px solid #ec407a !important;
-  box-shadow: 0 1px 0 0 #ec407a !important;
+  border-bottom: 1px solid var(--color) !important;
+  box-shadow: 0 1px 0 0 var(--color) !important;
 }
 
 .submit {
-  color: pink !important;
+  color: var(--color) !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -189,7 +193,6 @@ h3 {
   .custom-container {
     margin: 20px;
     padding: 20px;
-    visibility: hidden !important;
   }
 
   #about p {
